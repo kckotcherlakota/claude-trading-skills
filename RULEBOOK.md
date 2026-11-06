@@ -61,8 +61,9 @@ B) Scalp ("take even a small 5–10% squeeze"): 1-min structure — VWAP reclaim
 ## 7. Crypto (off-hours: weekdays 2 PM–9:30 AM ET, weekends all day)
 - BTC/ETH or another liquid Robinhood-listed coin (e.g. SOL, XRP, DOGE, LINK, AVAX, LTC, ADA), spot, buy-only, only when the 1h trend is not down and the 15m trend is up (price > EMA21 > EMA50, RSI 50–70);
   enter on a pullback or fresh 12-bar-high breakout. Candles: Coinbase public API (exchange.coinbase.com).
-- Size ≤ 60% of crypto buying power; stop just below the 15m 12-bar swing low; planned loss incl. ~1% spread ≤ $25;
-  counts toward the daily limits.
+- Size ≤ 60% of crypto buying power; stop just below the 15m 12-bar swing low; planned loss incl. fees ≤ $25;
+  counts toward the daily limits. Real cost (measured 2026-11-06): 0.95% fee per side (~1.9% round trip, Exchange Routing).
+  Skip any crypto entry unless the stop distance ≥ 2% and the +6–8% target is still ≥ 3× the round-trip fee.
 - Rest a gtc stop order right after the fill. +2% → stop to breakeven; +4% → trail to lock ~half; take profit at
   15m trend roll-over or +6–8%. Sell any open crypto at the 9:17 AM weekday check (frees capital for options).
 
@@ -101,3 +102,4 @@ B) Scalp ("take even a small 5–10% squeeze"): 1-min structure — VWAP reclaim
 - 2026-11-06 — lesson: morning trades +$14.76, afternoon breakouts 0 for 3 (−$26.32). Afternoon breakouts fade; after 1:00 PM only take a trade if the day is green and a 5-min close holds the level for 2 bars.
 - 2026-11-06 — user (today only): entries allowed after 2:00 PM ET to recover the day's loss, but EACH trade needs the user's explicit approval before placing; all other rules (§2 instruments, §3 sizing/$25 planned loss/$40 day limit, §6 exits, options closed by 3:30 PM) still apply. Capital protection first. Expires at today's close.
 - 2026-11-06 — user: crypto universe widened beyond BTC/ETH to other liquid Robinhood-listed coins; same §7 trend/stop/size rules.
+- 2026-11-06 — research: crypto cost rule updated to the measured 0.95%/side fee (was ~1% spread assumption); entries need stop ≥2% and target ≥3× round-trip fee. Web review supports existing afternoon rules for option buyers (theta accelerates late; 2–3:30 PM dealer-hedging swings).
