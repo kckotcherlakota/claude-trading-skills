@@ -98,3 +98,4 @@ B) Scalp ("take even a small 5–10% squeeze"): 1-min structure — VWAP reclaim
 - 2026-11-06 — lesson (QQQ 645P −$13): far-OTM 0DTE (delta <0.15) after 12:30 bleeds ~1%/min from theta, and a resting limit stop can miss in a fast drop. After 12:30 use delta ≥0.20 or next-day expiry; exit stops at the bid immediately.
 - 2026-11-06 — fix after 2 afternoon losers: 0DTE only 10:00–12:30 ET. After 12:30 use next-week expiry (far less time decay), delta 0.30–0.45, still closed same day. Never force trades to get back to green.
 - 2026-11-06 — user: minimize token cost ($124/mo); added §9 token economy + STATE.md handoff; 30s→60s checks.
+- 2026-11-06 — lesson: morning trades +$14.76, afternoon breakouts 0 for 3 (−$26.32). Afternoon breakouts fade; after 1:00 PM only take a trade if the day is green and a 5-min close holds the level for 2 bars.
