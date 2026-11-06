@@ -71,6 +71,19 @@ B) Scalp ("take even a small 5–10% squeeze"): 1-min structure — VWAP reclaim
 - 3:20 PM ET weekdays: close out options, email the daily report (real Robinhood numbers only).
 - 4:37 PM ET weekdays: strategy research; at most one tactic change per day, logged below. Never change §1–§3 rules on my own.
 
+## 9. Token economy (subscription ~$124/month must be paid by profits)
+- Break-even target: ~$31/week net profit just to cover the subscription. Track it in the daily email.
+- Biggest cost = long context + frequent wake-ups. So:
+  - Flat (no position): scan every 5 min max during 10:00–2:00; midday lull 10 min. No status replies when nothing changed.
+  - In a trade: let resting broker orders do the work (take-profit limit at broker). Check every 60s (0DTE) or
+    every 2–3 min (next-week expiry, slow decay). One combined check per tick: option quote + underlying quote only.
+  - Replies: one line per tick at most; full summaries only on entry, exit, or user question.
+  - After each trade settles: write a 3-line handoff to STATE.md (open positions, day P&L, next triggers) so a fresh
+    session can resume; the user can /clear or start a fresh session at any point without losing state.
+  - Prefer fresh-session routines (created in claude.ai Routines UI with Robinhood+Gmail connectors) that read
+    RULEBOOK.md + STATE.md, instead of one ever-growing session.
+- Never run the 30s tick on slow-decay (≥3 DTE) options.
+
 ## Change log
 - 2026-11-05 — 0DTE SPY/QQQ only, buy-only; max loss $10–15; one trade/day; daily email.
 - 2026-11-05 — $20 on volatile days; multiple trades after a loss; other liquid options + crypto allowed; capital put to work.
@@ -84,3 +97,4 @@ B) Scalp ("take even a small 5–10% squeeze"): 1-min structure — VWAP reclaim
 - 2026-11-06 — user: up to 100 trades/day; small $2 wins add up; capital protection still key.
 - 2026-11-06 — lesson (QQQ 645P −$13): far-OTM 0DTE (delta <0.15) after 12:30 bleeds ~1%/min from theta, and a resting limit stop can miss in a fast drop. After 12:30 use delta ≥0.20 or next-day expiry; exit stops at the bid immediately.
 - 2026-11-06 — fix after 2 afternoon losers: 0DTE only 10:00–12:30 ET. After 12:30 use next-week expiry (far less time decay), delta 0.30–0.45, still closed same day. Never force trades to get back to green.
+- 2026-11-06 — user: minimize token cost ($124/mo); added §9 token economy + STATE.md handoff; 30s→60s checks.
