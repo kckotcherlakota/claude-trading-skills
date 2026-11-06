@@ -10,13 +10,8 @@ Account number and report email live in the routine prompts, not here (public re
 - "Small drops become a big river": stack small protected wins and let the account compound.
 - Long-term goal from the user: $1,000/week. Never break a risk rule to chase it.
 - Pre-authorized: trade without waiting for approval when a setup qualifies. A bad trade is worse than no trade.
-- Day-trade guard (user 2026-11-06: must NOT be flagged PDT). The API shows no PDT flag or day-trade
-  counter, and the account is limited_margin under $25k, so assume the old rule may still apply:
-  max 3 same-day round trips (open+close same day) in any rolling 5 business days. Count conservatively.
-  Log: 11-05 SPY put (1); 11-06 QQQ call (1); 11-06 RIOT call (1 buy, 2 sells = 1, maybe 2).
-  At the cap: no new 0DTE trades; only setups held overnight (next-week expiry, sized so an overnight
-  gap stays within the planned loss) or crypto (no PDT). Also: if any order preview shows a
-  day-trade/PDT or buying-power warning, do NOT place it and tell the user.
+- No limit on the number of trades or day trades (user 2026-11-06: "unlimited"; PDT rule removed).
+  Safety net only: if an order preview shows a day-trade/PDT or buying-power warning, do NOT place it and tell the user.
 
 ## 2. What may be traded
 1. 0DTE SPY / QQQ options (preferred).
@@ -31,7 +26,7 @@ Account number and report email live in the routine prompts, not here (public re
 ## 3. Sizing & day limits ("Push harder" — user's choice)
 - Position size ≤ ~60% of buying power (use the buying power Robinhood reports).
 - Planned loss per trade ≤ $25 (stop % = $25 ÷ premium; breakout stops never wider than −40%).
-- ≤ 4 trades per day; daily realized loss limit $40 (never open a trade that could push past it).
+- Unlimited trades per day; daily realized loss limit $40 (never open a trade that could push past it).
 - After a win keep trading, but protect the day: next trade's planned loss ≤ max($10, 50% of today's net profit).
   If today's profit ≥ $25, stop once it falls below 50% of the day's peak.
 - No revenge trades — every re-entry needs a NEW valid setup.
@@ -84,3 +79,4 @@ B) Scalp ("take even a small 5–10% squeeze"): 1-min structure — VWAP reclaim
 - 2026-11-06 — market-wide scanner for the whole tradable universe; PDT removed (user); "$1,000/week" long-term goal.
 - 2026-11-06 — rulebook created; all routines read it each run to keep context small.
 - 2026-11-06 — day-trade guard: max 3 round trips per rolling 5 business days (cap reached 11-06).
+- 2026-11-06 — user: no limit on trades (unlimited); day-trade guard and 4-trade cap removed; $40 daily loss limit stays.
