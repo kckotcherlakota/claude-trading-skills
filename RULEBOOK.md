@@ -50,7 +50,7 @@ B) Scalp ("take even a small 5–10% squeeze"): 1-min structure — VWAP reclaim
   Once per 5-min bar (≈10 min in a midday lull, 5 min near a trigger). Stop scanning at 2:00 PM ET.
 
 ## 6. Once money is in — 100% caution
-- Check every 1 minute: option bid/ask, underlying, 1-min and 5-min bars.
+- Check every 30 seconds while money is in (Monitor tick every 30s; send_later 1-min as backup): option bid/ask, underlying, 1-min and 5-min bars.
 - Protect gains: ≥ +15% → never close below breakeven +3%; ≥ +30% → lock at least half; +100% → always sell.
 - Take profit on any stall: 2 one-minute bars against, lower high/higher low after a push, key level, macro event, afternoon decay.
 - Exit immediately if the underlying closes a 1-min bar back through VWAP/the breakout level.
@@ -75,5 +75,6 @@ B) Scalp ("take even a small 5–10% squeeze"): 1-min structure — VWAP reclaim
 - 2026-11-05 — $20 on volatile days; multiple trades after a loss; other liquid options + crypto allowed; capital put to work.
 - 2026-11-05 — "Push harder": 60% size, $25/trade, 4 trades, $40 day limit; resting broker stops; crypto off-hours.
 - 2026-11-06 — scalps for small 5–10% squeezes; keep trading after a win with day-gain protection; 1-min in-trade checks.
+- 2026-11-06 — user: check every 30 seconds when money is in.
 - 2026-11-06 — market-wide scanner for the whole tradable universe; PDT removed (user); "$1,000/week" long-term goal.
 - 2026-11-06 — rulebook created; all routines read it each run to keep context small.
