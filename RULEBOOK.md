@@ -26,7 +26,8 @@ Account number and report email live in the routine prompts, not here (public re
 ## 3. Sizing & day limits ("Push harder" — user's choice)
 - Position size ≤ ~60% of buying power (use the buying power Robinhood reports).
 - Planned loss per trade ≤ $25 (stop % = $25 ÷ premium; breakout stops never wider than −40%).
-- Unlimited trades per day; daily realized loss limit $40 (never open a trade that could push past it).
+- Unlimited trades per day (user: up to ~100; many small +$2–5 scalps welcome). A scalp needs spread ≤5% of price
+  and target ≥3× (spread + fees), or it's a guaranteed bleed. Daily realized loss limit $40 (never open a trade that could push past it).
 - After a win keep trading, but protect the day: next trade's planned loss ≤ max($10, 50% of today's net profit).
   If today's profit ≥ $25, stop once it falls below 50% of the day's peak.
 - No revenge trades — every re-entry needs a NEW valid setup.
@@ -80,3 +81,4 @@ B) Scalp ("take even a small 5–10% squeeze"): 1-min structure — VWAP reclaim
 - 2026-11-06 — rulebook created; all routines read it each run to keep context small.
 - 2026-11-06 — day-trade guard: max 3 round trips per rolling 5 business days (cap reached 11-06).
 - 2026-11-06 — user: no limit on trades (unlimited); day-trade guard and 4-trade cap removed; $40 daily loss limit stays.
+- 2026-11-06 — user: up to 100 trades/day; small $2 wins add up; capital protection still key.
