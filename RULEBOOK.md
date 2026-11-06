@@ -19,7 +19,7 @@ Account number and report email live in the routine prompts, not here (public re
    (scan_id 47e13f99-78d2-4ece-a5b1-c8627a97b50e: stock/ETF, mkt cap > $5B, options volume > 30k, move ±2.5%+).
    Requirements: nearest weekly expiry; bid/ask spread ≤ ~10% of price (≤ $0.05 under $1); real volume/OI;
    NO earnings or major event before expiry. Close same day.
-3. Crypto: BTC / ETH spot, buy-only (see §7).
+3. Crypto: BTC / ETH and other liquid Robinhood-listed coins (user 2026-11-06), spot, buy-only (see §7).
 - Always buy-to-open calls/puts only. Never sell-to-open, spreads, shorts, leverage, or stocks.
 - One position at a time across options and crypto.
 
@@ -59,7 +59,7 @@ B) Scalp ("take even a small 5–10% squeeze"): 1-min structure — VWAP reclaim
 - All options closed by 3:30 PM ET; never let one expire or be exercised.
 
 ## 7. Crypto (off-hours: weekdays 2 PM–9:30 AM ET, weekends all day)
-- BTC/ETH spot, buy-only, only when the 1h trend is not down and the 15m trend is up (price > EMA21 > EMA50, RSI 50–70);
+- BTC/ETH or another liquid Robinhood-listed coin (e.g. SOL, XRP, DOGE, LINK, AVAX, LTC, ADA), spot, buy-only, only when the 1h trend is not down and the 15m trend is up (price > EMA21 > EMA50, RSI 50–70);
   enter on a pullback or fresh 12-bar-high breakout. Candles: Coinbase public API (exchange.coinbase.com).
 - Size ≤ 60% of crypto buying power; stop just below the 15m 12-bar swing low; planned loss incl. ~1% spread ≤ $25;
   counts toward the daily limits.
@@ -100,3 +100,4 @@ B) Scalp ("take even a small 5–10% squeeze"): 1-min structure — VWAP reclaim
 - 2026-11-06 — user: minimize token cost ($124/mo); added §9 token economy + STATE.md handoff; 30s→60s checks.
 - 2026-11-06 — lesson: morning trades +$14.76, afternoon breakouts 0 for 3 (−$26.32). Afternoon breakouts fade; after 1:00 PM only take a trade if the day is green and a 5-min close holds the level for 2 bars.
 - 2026-11-06 — user (today only): entries allowed after 2:00 PM ET to recover the day's loss, but EACH trade needs the user's explicit approval before placing; all other rules (§2 instruments, §3 sizing/$25 planned loss/$40 day limit, §6 exits, options closed by 3:30 PM) still apply. Capital protection first. Expires at today's close.
+- 2026-11-06 — user: crypto universe widened beyond BTC/ETH to other liquid Robinhood-listed coins; same §7 trend/stop/size rules.
