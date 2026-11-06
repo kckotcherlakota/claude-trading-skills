@@ -99,3 +99,4 @@ B) Scalp ("take even a small 5–10% squeeze"): 1-min structure — VWAP reclaim
 - 2026-11-06 — fix after 2 afternoon losers: 0DTE only 10:00–12:30 ET. After 12:30 use next-week expiry (far less time decay), delta 0.30–0.45, still closed same day. Never force trades to get back to green.
 - 2026-11-06 — user: minimize token cost ($124/mo); added §9 token economy + STATE.md handoff; 30s→60s checks.
 - 2026-11-06 — lesson: morning trades +$14.76, afternoon breakouts 0 for 3 (−$26.32). Afternoon breakouts fade; after 1:00 PM only take a trade if the day is green and a 5-min close holds the level for 2 bars.
+- 2026-11-06 — user (today only): entries allowed after 2:00 PM ET to recover the day's loss, but EACH trade needs the user's explicit approval before placing; all other rules (§2 instruments, §3 sizing/$25 planned loss/$40 day limit, §6 exits, options closed by 3:30 PM) still apply. Capital protection first. Expires at today's close.
