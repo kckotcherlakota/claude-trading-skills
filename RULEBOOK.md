@@ -82,3 +82,4 @@ B) Scalp ("take even a small 5–10% squeeze"): 1-min structure — VWAP reclaim
 - 2026-11-06 — day-trade guard: max 3 round trips per rolling 5 business days (cap reached 11-06).
 - 2026-11-06 — user: no limit on trades (unlimited); day-trade guard and 4-trade cap removed; $40 daily loss limit stays.
 - 2026-11-06 — user: up to 100 trades/day; small $2 wins add up; capital protection still key.
+- 2026-11-06 — lesson (QQQ 645P −$13): far-OTM 0DTE (delta <0.15) after 12:30 bleeds ~1%/min from theta, and a resting limit stop can miss in a fast drop. After 12:30 use delta ≥0.20 or next-day expiry; exit stops at the bid immediately.
